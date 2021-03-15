@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vehicle information</title>
+
+</head>
+
+<body>
+    <header> Vehicle information </header>
+
+    <form id="car">
+        <label for="carname">car name:</label>
+        <input id="carname" type="text">
+
+        <label for="wheels">number ofwheels:</label>
+        <input id="wheels" type="text">
+
+        <label for="engineCapacity">engine Capacity: </label>
+        <input id="engineCapacity" type="text">
+
+        <label for="carcolor">color:</label>
+        <input id="carcolor" type="text">
+
+        <select name="cars" id="carsselect">
+            <option value=""></option>
+            <option value="Motorcycle">Motorcycle</option>
+            <option value="Truck">Truck</option>
+            <option value="PrivateCar">Private Car</option>
+        </select>
+
+        <button type="button" onclick="InfoFromUser()"> SEND</button>
+        <button type="reset"> Reset</button>
+
+    </form>
+    <table id="table">
+
+        <th>
+            carname
+        </th>
+        <th>
+            wheels
+        </th>
+        <th>
+            engine capacity
+        </th>
+        <th>
+            color
+        </th>
+        <th>
+            car type
+        </th>
+
+    </table>
+
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
