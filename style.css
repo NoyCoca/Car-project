@@ -1,11 +1,18 @@
 body{
+    font-size: 20px;
     text-align: -webkit-center;
     font-family: system-ui;
-    background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg");
+    background-color: rgba(0, 0, 0, 0.301);
+    /* background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg"); */
 }
 header{
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 60px;
+    border-bottom:2px solid #80808069;
+    margin: 23px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #car{
     display: flex;
@@ -14,7 +21,7 @@ header{
     margin-bottom: 15px;
 }
 #car input, select, button{
-    width: 200px;
+    width: 300px;
     height: 20px;
     background-color: #80808069;
     border: black solid 2px;
@@ -22,11 +29,11 @@ header{
 }
 select, button{
     margin: 10px;
-    width: 208px;
+    width: 308px;
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid  black;;
     width: 600px;
 }
 
@@ -34,4 +41,12 @@ button:hover{
     background-color:   #808080b6;
 
 }
+div img {
+    width: 100vw;
+    height: 70vh;
+}
+#cont{
+    position: relative;
+}
+
 
