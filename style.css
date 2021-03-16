@@ -33,7 +33,7 @@ select, button{
 
 table, th, td {
     border: 1px solid  black;;
-    width: 600px;
+    width: 700px; ;
 }
 
 button:hover{
@@ -41,7 +41,7 @@ button:hover{
 
 }
 div img {
-    width: 100vw;
+    width: 98vw;
     height: 70vh;
 }
 #cont{
