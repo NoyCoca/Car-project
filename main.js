@@ -20,7 +20,7 @@ class Cars {
                 carEngine = car.engineCapacity;
             }
         });
-        return carsArr.find(car => car.engineCapacity == carEngine)
+        return carsArr.filter(car => car.engineCapacity == carEngine)
     }
 }
 class PrivateCar extends Cars {
@@ -52,12 +52,12 @@ class Motorcycle extends Cars {
     }
 }
 
-let car1 = new Motorcycle("mazda", 3, 455, "pink",);
-let car2 = new Truck("mazda", 3, 45, "pink",);
-let car3 = new PrivateCar("mazda", 3, 4455, "pink");
-let car4 = new PrivateCar("mazda", 3, 445555, "pink");
+let car1 = new Motorcycle("T-MAX", 2, 1200, "black",);
+let car2 = new Truck("Volvo", 4, 1500, "white",);
+let car3 = new PrivateCar("mazda", 4, 1300, "purple");
+let car4 = new PrivateCar("BMW", 4, 1500, "black");
 
-console.log(Cars.engineVolume([car1, car2, car3]));
+console.log(Cars.engineVolume([car1, car2, car3, car4]));
 
 function InfoFromUser() {
     let userCar;
