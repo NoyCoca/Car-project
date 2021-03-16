@@ -3,7 +3,6 @@ class Cars {
     wheels;
     engineCapacity;
     color;
-    static counter = 0;
     constructor(car, wheels, engineCapacity, color) {
         this.car = car;
         this.wheels = wheels;
@@ -30,8 +29,6 @@ class PrivateCar extends Cars {
     get Info() {
         return this.getInfo().toUpperCase();
     }
-    static counterPrivateCar = 0;
-
 }
 class Truck extends Cars {
 
@@ -63,24 +60,17 @@ function InfoFromUser() {
     let userCar;
     if (carsselect.value == "Motorcycle") {
         userCar = new Motorcycle(carname.value, wheels.value, engineCapacity.value, carcolor.value);
-        Cars.counter++;
+
     }
     if (carsselect.value == "Truck") {
         userCar = new Truck(carname.value, wheels.value, engineCapacity.value, carcolor.value);
-        Cars.counter++;
+
     }
     if (carsselect.value == "PrivateCar") {
         userCar = new PrivateCar(carname.value, wheels.value, engineCapacity.value, carcolor.value);
-        Cars.counter++;
-        PrivateCar.counterPrivateCar++;
-    }
 
-    const orderFieldsConfig = ["car", "wheels", "engineCapacity", "color"];
-    table.innerHTML += `<tr id = "${userCar.car}${Cars.counter}"></tr>`;
-    for (const key of orderFieldsConfig) {
-        document.getElementById(`${userCar.car}${Cars.counter}`).innerHTML += `<td>${userCar[key]} </td>`;
     }
-    document.getElementById(`${userCar.car}${Cars.counter}`).innerHTML += `<td>${carsselect.value} </td>`;
-
+    table.innerHTML += `<tr> <td>${carname.value}</td><td>${wheels.value}</td><td>${engineCapacity.value}</td><td>${carcolor.value}</td>
+    <td>${carsselect.value}</td></tr>`
 }
 
