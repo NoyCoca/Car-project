@@ -49,13 +49,6 @@ class Motorcycle extends Cars {
     }
 }
 
-let car1 = new Motorcycle("T-MAX", 2, 1200, "black",);
-let car2 = new Truck("Volvo", 4, 1500, "white",);
-let car3 = new PrivateCar("mazda", 4, 1300, "purple");
-let car4 = new PrivateCar("BMW", 4, 1500, "black");
-
-console.log(Cars.engineVolume([car1, car2, car3, car4]));
-
 function InfoFromUser() {
     let userCar;
     if (carsselect.value == "Motorcycle") {
@@ -74,3 +67,15 @@ function InfoFromUser() {
     <td>${carsselect.value}</td></tr>`
 }
 
+
+let car1 = new Motorcycle("T-MAX", 2, 1200, "black",);
+let car2 = new Truck("Volvo", 4, 1500, "white",);
+let car3 = new PrivateCar("mazda", 4, 1300, "purple");
+let car4 = new PrivateCar("BMW", 4, 1100, "black");
+
+console.log(car4.getInfo())
+
+console.log(car2.Info);
+
+let cars =  Cars.engineVolume([car1, car2, car3, car4])
+console.log(cars);
